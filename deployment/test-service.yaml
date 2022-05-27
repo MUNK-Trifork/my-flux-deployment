@@ -4,9 +4,9 @@ metadata:
   name: test-service
   namespace: testing
 spec:
+  type: NodePort
   selector:
     app: test-deployment
   ports:
-    - protocol: TCP
-      port: 8080
-      targetPort: 5050
+    - port: 8080
+      targetPort: 9334
