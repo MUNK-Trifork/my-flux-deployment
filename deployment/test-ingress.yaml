@@ -14,13 +14,13 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: web
+            name: test-service
             port:
               number: 8080
       - path: /v2
         pathType: Prefix
         backend:
           service:
-            name: web2
+            name: test-service
             port:
               number: 8080
