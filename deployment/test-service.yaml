@@ -8,5 +8,7 @@ spec:
     app: test-deployment
     version: 2.0.0
   ports:
-    - port: 8070
+    - name: http
+      protocol: TCP
+      port: 8070
       targetPort: 8070

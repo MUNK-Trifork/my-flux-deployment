@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: testdeployment
+  name: test-deployment
   namespace: testing
   labels:
-    app: testdeployment
+    app: test-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: testdeployment
+      app: test-deployment
       version: 2.0.0
   template:
     metadata:
       labels:
-        app: testdeployment
+        app: test-deployment
         version: 2.0.0
     spec:
       containers:
