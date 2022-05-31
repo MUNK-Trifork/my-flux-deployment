@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: testdeployment2
+  name: test-deployment2
   labels:
-    app: testdeployment2
+    app: test-deployment2
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: testdeployment2
+      app: test-deployment2
   template:
     metadata:
       labels:
-        app: testdeployment2
+        app: test-deployment2
     spec:
       containers:
       - name: hello2
