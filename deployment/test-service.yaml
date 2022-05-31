@@ -8,5 +8,5 @@ spec:
     app: test-deployment
     version: 2.0.0
   ports:
-    - port: 8080
-      targetPort: 8020
+    - port: 80
+      targetPort: 8080
