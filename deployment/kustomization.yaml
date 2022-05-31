@@ -1,6 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - testdeployment.yaml
-  - testservice.yaml
-  - testingress.yaml
+  - test-deployment.yaml
+  - test-deployment2.yaml
+  - test-service.yaml
+  - test-service2.yaml
+  - test-ingress.yaml
