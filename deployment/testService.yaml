@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: test-service
+  name: testService
   namespace: testing
 spec:
   type: NodePort
   selector:
-    app: test-deployment
+    app: testDeployment
   ports:
     - port: 8080
       targetPort: 8080
