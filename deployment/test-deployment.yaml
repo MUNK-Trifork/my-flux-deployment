@@ -18,5 +18,5 @@ spec:
         version: 2.0.0
     spec:
       containers:
-      - name: test-deployment
+      - name: nginx
         image: nginx:1.14.2
