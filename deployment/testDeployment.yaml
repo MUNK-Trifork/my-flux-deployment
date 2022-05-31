@@ -2,17 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: testdeployment
+  namespace: testing
   labels:
-    app: nginx
+    app: testdeployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: testdeployment
+      version: 2.0.0
   template:
     metadata:
       labels:
-        app: nginx
+        app: testdeployment
+        version: 2.0.0
     spec:
       containers:
       - name: nginx
