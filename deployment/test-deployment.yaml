@@ -17,3 +17,24 @@ spec:
       containers:
       - name: hello
         image: gcr.io/google-samples/hello-app:1.0
+
+# WORKING VERSION BELOW
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: test-deployment
+#   labels:
+#     app: test-deployment
+# spec:
+#   replicas: 3
+#   selector:
+#     matchLabels:
+#       app: test-deployment
+#   template:
+#     metadata:
+#       labels:
+#         app: test-deployment
+#     spec:
+#       containers:
+#       - name: hello
+#         image: gcr.io/google-samples/hello-app:1.0
